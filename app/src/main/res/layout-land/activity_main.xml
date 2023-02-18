@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:fontFamily="sans-serif-black"
+        android:labelFor="@+id/Number1"
+        android:text="@string/header"
+        android:textAlignment="center"
+        android:textSize="20sp">
+
+    </TextView>
+
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="232dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="419dp"
+        android:layout_marginBottom="189dp"
+        android:layout_weight="1"
+        android:background="@drawable/track"
+        android:paddingTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="280dp"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/firstSwitch"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:thumb="@drawable/thumbnail"
+            app:track="@drawable/track" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="12dp"
+            android:layout_weight="2"
+            android:max="255"
+            android:progressTint="@color/red"
+            android:thumbTint="@color/red" />
+
+        <TextView
+            android:id="@+id/number1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:maxLength="4"
+            android:text="0.0"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="323dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="323dp"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="122dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="221dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:thumb="@drawable/thumbnail"
+            app:track="@drawable/track2" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:max="255"
+            android:progressTint="@color/green"
+            android:thumbTint="@color/green" />
+
+        <TextView
+            android:id="@+id/number2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:maxLength="4"
+            android:text="0.0"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="324dp"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="160dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch3"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:checked="false"
+            android:thumb="@drawable/thumbnail"
+            app:track="@drawable/track3" />
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:max="255"
+            android:progressTint="@color/blue"
+            android:thumbTint="@color/blue" />
+
+        <TextView
+            android:id="@+id/number3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:maxLength="4"
+            android:text="0.0"
+            android:textSize="15sp"
+            tools:ignore="InvalidId" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="97dp"
+        android:background="@color/softBlack"
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:text="@string/resetButton" />
+
+
+</RelativeLayout>
+
+
+
